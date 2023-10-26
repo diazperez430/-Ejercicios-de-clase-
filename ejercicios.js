@@ -1,4 +1,4 @@
-/** De un listado de personas determinar cuales son los productos que estan entre
+/** 1.  De un listado de personas determinar cuales son los productos que estan entre
  10 y 20 dolares */
 
 // const frutas = [
@@ -12,27 +12,27 @@
 
 
 //////////////////////////////////////////////////////////////////////////////////
-const frutas = [
-    { nombre: 'Mangostino', precio: 34 },       
-    { nombre: 'Mora', precio: 17 },      
-    { nombre: 'Banano', precio: 11 },        
-    { nombre: 'Papaya', precio: 13 },      
-    { nombre: 'Lulo', precio: 8 }      
-];
+// const frutas = [
+//     { nombre: 'Mangostino', precio: 34 },       
+//     { nombre: 'Mora', precio: 17 },      
+//     { nombre: 'Banano', precio: 11 },        
+//     { nombre: 'Papaya', precio: 13 },      
+//     { nombre: 'Lulo', precio: 8 }      
+// ];
 
-let lista = []
+// let lista = []
 
-for (let i=0; i<frutas.length; i++){
-    if (frutas[i].precio >=10 && frutas[i].precio <=20 ){
-        lista.push(frutas[i].nombre)
-    }
-    };
+// for (let i=0; i<frutas.length; i++){
+//     if (frutas[i].precio >=10 && frutas[i].precio <=20 ){
+//         lista.push(frutas[i].nombre)
+//     }
+//     };
 
 
-console.log(lista)
+// console.log(lista)
 
 //////////////////////////////////////////////////////////////////////////////////7
-
+//2. 
 // const values = [
 //     { name: 'Juan', age: 45, gender: 'male' },
 //     { name: 'Sofia', age: 13, gender: 'female' },
@@ -50,110 +50,112 @@ console.log(lista)
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-const values = [
-    { name: 'Juan', age: 45, gender: 'male' },
-    { name: 'Sofia', age: 13, gender: 'female' },
-    { name: 'Sofia', age: 67, gender: 'female' },
-    { name: 'Carlos', age: 32, gender: 'female'},
-    { name: 'Ana Maria', age: 27, gender: 'female' },
-    { name: 'Luisa', age: 5, gender: 'female' },
-    { name: 'Elisa', age: 17, gender: 'female' }
-];
+// const values = [
+//     { name: 'Juan', age: 45, gender: 'male' },
+//     { name: 'Sofia', age: 13, gender: 'female' },
+//     { name: 'Sofia', age: 67, gender: 'female' },
+//     { name: 'Carlos', age: 32, gender: 'female'},
+//     { name: 'Ana Maria', age: 27, gender: 'female' },
+//     { name: 'Luisa', age: 5, gender: 'female' },
+//     { name: 'Elisa', age: 17, gender: 'female' }
+// ];
 
 
 
-let Hombres = [];
-let Mujeres = [];
+// let Hombres = [];
+// let Mujeres = [];
 
 
-for (let i =0; i<values.length; i++){
-    if(values[i].gender == "male"){
-        Hombres.push(values[i].name)
-    };
+// for (let i =0; i<values.length; i++){
+//     if(values[i].gender == "male"){
+//         Hombres.push(values[i].name)
+//     };
 
-};
+// };
 
-console.log(`La cantidad de hombres en values es ${Hombres.length}`)
+// console.log(`La cantidad de hombres en values es ${Hombres.length}`)
 
-for (let i =0; i<values.length; i++){
-    if(values[i].gender == "female"){
-        Mujeres.push(values[i].name)
-    };
+// for (let i =0; i<values.length; i++){
+//     if(values[i].gender == "female"){
+//         Mujeres.push(values[i].name)
+//     };
 
-};
+// };
 
-console.log(`La cantidad de mujeres de values es ${Mujeres.length}`)
-
-
-
-let edadH = [];
+// console.log(`La cantidad de mujeres de values es ${Mujeres.length}`)
 
 
-for (let i=0; i<values.length;i++){
-    if(values[i].gender == "male"){
-        edadH.push(values[i].age)
-    }
-}
 
-let suma=0;
+// let edadH = [];
 
-for(i=0;i<edadH.length;i++){
 
-    edadH = edadH[i]
+// for (let i=0; i<values.length;i++){
+//     if(values[i].gender == "male"){
+//         edadH.push(values[i].age)
+//     }
+// }
+
+// let suma=0;
+
+// for(i=0;i<edadH.length;i++){
+
+//     edadH = edadH[i]
     
-    suma =suma+edadH
+//     suma =suma+edadH
     
-};
+// };
 
-let promedio = suma/Hombres.length
-console.log(`El promedio de edad de los hombres de values es ${promedio}`)
-
-
-
-let edadM = [];
+// let promedio = suma/Hombres.length
+// console.log(`El promedio de edad de los hombres de values es ${promedio}`)
 
 
-for (let i=0; i<values.length;i++){
-    if(values[i].gender == "female"){
-        edadM.push(values[i].age)
-    }
-}
+
+// let edadM = [];
 
 
-let sumaDos=0;
+// for (let i=0; i<values.length;i++){
+//     if(values[i].gender == "female"){
+//         edadM.push(values[i].age)
+//     }
+// }
 
-for(i=0;i<edadM.length;i++){
+
+// let sumaDos=0;
+
+// for(i=0;i<edadM.length;i++){
     
-    sumaDos =sumaDos+edadM[i]
+//     sumaDos =sumaDos+edadM[i]
     
-};
+// };
 
-let promedioDos = sumaDos/Mujeres.length
+// let promedioDos = sumaDos/Mujeres.length
 
-console.log(`El promedio de edad de las Mujeres de values es ${promedioDos}`)
-
-
+// console.log(`El promedio de edad de las Mujeres de values es ${promedioDos}`)
 
 
-let List = [];
-let repetidos = []
-
-for(let i = 0; i < values.length; i++){
-
-    List.push(values[i].name)
-
-}
-
-for(i=0; i < List.length; i++){
-
-    if(List[i+1]===List[i]){
-        repetidos.push(List[i])
-    }
-
-}
-
-console.log(`Hay ${repetidos.length} nombres repetidos`)
 
 
+// let List = [];
+// let repetidos = []
+
+// for(let i = 0; i < values.length; i++){
+
+//     List.push(values[i].name)
+
+// }
+
+// for(i=0; i < List.length; i++){
+
+//     if(List[i+1]===List[i]){
+//         repetidos.push(List[i])
+//     }
+
+// }
+
+// console.log(`Hay ${repetidos.length} nombres repetidos`)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// 3. 
 
 
