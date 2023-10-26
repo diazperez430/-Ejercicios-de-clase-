@@ -83,7 +83,7 @@ for (let i =0; i<values.length; i++){
 console.log(`La cantidad de mujeres de values es ${Mujeres.length}`)
 
 let edadH = [];
-let edadM = [];
+
 
 for (let i=0; i<values.length;i++){
     if(values[i].gender == "male"){
@@ -105,7 +105,7 @@ let promedio = suma/Hombres.length
 console.log(`El promedio de edad de los hombres de values es ${promedio}`)
 
 
-
+let edadM = [];
 
 
 for (let i=0; i<values.length;i++){
@@ -113,17 +113,16 @@ for (let i=0; i<values.length;i++){
         edadM.push(values[i].age)
     }
 }
+console.log(edadM)
 
 let sumaDos=0;
 
 for(i=0;i<edadM.length;i++){
-
-    edadM = edadM[i]
     
-    sumaDos =sumaDos+edadM
+    sumaDos =sumaDos+edadM[i]
     
 };
-
+console.log(sumaDos)
 let promedioDos = sumaDos/Mujeres.length
 
 console.log(`El promedio de edad de las Mujeres de values es ${promedioDos}`)
