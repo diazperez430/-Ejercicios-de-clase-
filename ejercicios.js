@@ -60,6 +60,8 @@ const values = [
     { name: 'Elisa', age: 17, gender: 'female' }
 ];
 
+
+
 let Hombres = [];
 let Mujeres = [];
 
@@ -81,6 +83,8 @@ for (let i =0; i<values.length; i++){
 };
 
 console.log(`La cantidad de mujeres de values es ${Mujeres.length}`)
+
+
 
 let edadH = [];
 
@@ -105,6 +109,7 @@ let promedio = suma/Hombres.length
 console.log(`El promedio de edad de los hombres de values es ${promedio}`)
 
 
+
 let edadM = [];
 
 
@@ -113,7 +118,7 @@ for (let i=0; i<values.length;i++){
         edadM.push(values[i].age)
     }
 }
-console.log(edadM)
+
 
 let sumaDos=0;
 
@@ -122,7 +127,7 @@ for(i=0;i<edadM.length;i++){
     sumaDos =sumaDos+edadM[i]
     
 };
-console.log(sumaDos)
+
 let promedioDos = sumaDos/Mujeres.length
 
 console.log(`El promedio de edad de las Mujeres de values es ${promedioDos}`)
@@ -130,10 +135,24 @@ console.log(`El promedio de edad de las Mujeres de values es ${promedioDos}`)
 
 
 
+let List = [];
+let repetidos = []
 
+for(let i = 0; i < values.length; i++){
 
+    List.push(values[i].name)
 
+}
 
+for(i=0; i < List.length; i++){
+
+    if(List[i+1]===List[i]){
+        repetidos.push(List[i])
+    }
+
+}
+
+console.log(`Hay ${repetidos.length} nombres repetidos`)
 
 
 
