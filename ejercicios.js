@@ -245,7 +245,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-/* ¿Va a sobrevivir?
+/* 4. ¿Va a sobrevivir?
 
 Un héroe se dirige al castillo para completar su misión. Sin embargo, le han dicho 
 que el castillo está rodeado por un par de poderosos dragones. cada dragón necesita
@@ -363,3 +363,160 @@ Responda a la pregunta y devuelva true si es así, de lo contrario false */
 // else {
 //     alert(`You won´t survive the mission, we were recently informed a dragon can be killed with at least 2 bullets, you have ${totalBalas} bullets and there are ${dragones} dragons please return to the base`)
 // }
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+// 5. A partir de la siguiente lista
+
+// let products = [
+//     { nombre: "Pan", precio: 3, cantidad: 20 },
+//     { nombre: "Tomate", precio: 8, cantidad: 7 },
+//     { nombre: "Leche", precio: 0, cantidad: 4 },
+//     { nombre: "Huevos", precio: 9, cantidad: 0 },
+//     { nombre: "Arroz", precio: 5, cantidad: 5 },
+//     { nombre: "Cebolla", precio: 0, cantidad: 10 },
+//     { nombre: "Naranjas", precio: 12, cantidad: 10 },
+// ];
+
+// // Obtener una lista con los nombres de los productos mas baratos, en el entendido 
+// que se considera barato un producto que no supera los 5 dólares.
+// // Calcular el costo promedio de todos productos de la lista cuyo precio y cantidad
+//  disponible es mayor a cero
+// // Calcular el costo total del inventario.
+
+///////////////////////////////////////////////////////////////////////////////////
+
+
+// let products = [
+//     { nombre: "Pan", precio: 3, cantidad: 20 },
+//     { nombre: "Tomate", precio: 8, cantidad: 7 },
+//     { nombre: "Leche", precio: 0, cantidad: 4 },
+//     { nombre: "Huevos", precio: 9, cantidad: 0 },
+//     { nombre: "Arroz", precio: 5, cantidad: 5 },
+//     { nombre: "Cebolla", precio: 0, cantidad: 10 },
+//     { nombre: "Naranjas", precio: 12, cantidad: 10 },
+// ];
+
+// let productosBaratos = [];
+
+// for (let i =0; i<products.length; i++){
+
+//     if(products[i].precio <=5){
+//         productosBaratos.push(products[i].nombre)
+//     }
+    
+// }
+
+// console.log(`Estos son los productos baratos: ${productosBaratos}`)
+
+
+
+
+// let productosNoGratis = [];
+
+// for (let i =0; i<products.length; i++){
+
+//     if(products[i].precio >0 && products[i].cantidad>0){
+//         productosNoGratis.push(products[i].precio)
+//     }
+    
+// }
+
+// let suma=0;
+
+// for(i=0;i<productosNoGratis.length;i++){
+
+//     a = productosNoGratis[i]
+    
+//     suma =suma+a
+    
+// };
+
+// console.log(`El costo promedio de los productos cuyo
+// precio o cantidad son mayores a 0 es ${suma/productosNoGratis.length}`)
+
+
+
+
+// let costoTotal = [];
+
+// for (let i =0; i<products.length; i++){
+//         costoTotal.push(products[i].precio)
+// }
+
+// let total = 0
+
+// for(i=0;i<costoTotal.length;i++){
+
+//         a = costoTotal[i]
+        
+//         total =total+a
+        
+//     };
+
+// console.log(`El costo total del inventario es $ ${total}`)
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+/* 6. Amplia la funcionalidad de la función suma()
+
+La siguiente función es capaz de sumar dos números. ¿qué cambios deben hacerse a la misma para
+ que sea capaz de sumar 2 o más números?
+
+function suma( numero1, numero2 ) {
+    return numero1 + numero2;
+}
+
+suma( 3, 6 );  */
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+// function suma(...numero){
+//     let total = 0;
+//     for (const i of numero){
+//         total = total +i
+//     }
+
+//     return total;
+// }
+
+// salida = suma(100, 90, 1020, 2,3,4,5,7,8,9,0,1,2,3,4)
+// console.log(salida)
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+/*Calcular precio sin IVA
+
+Escribe una función que calcule el precio original del producto, sin IVA. Si el precio de un 
+producto es 200,00 y el IVA es del 15%, entonces el precio final del producto (con IVA) 
+es: 200,00 + 15% = 230,00. Por lo tanto, si su función recibe 230,00 como entrada, debería 
+devolver 200,00
+
+Restricciones:
+El IVA es siempre del 15%.
+Redondea el resultado a 2 decimales.
+Si se proporciona un valor nulo, devuelve -1 */
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// function sinIva (valor){
+
+//     if(valor==null){
+//         valor = -1
+//         return valor
+//     }
+//     else{
+//         return valor - (valor*15/100)
+//     }
+
+    
+
+// }
+ 
+// let salida = sinIva(230)
+// console.log(salida.toFixed(2))
+
+
+
