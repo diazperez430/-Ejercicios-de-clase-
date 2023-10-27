@@ -486,7 +486,7 @@ suma( 3, 6 );  */
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-/*Calcular precio sin IVA
+/* 7. Calcular precio sin IVA
 
 Escribe una función que calcule el precio original del producto, sin IVA. Si el precio de un 
 producto es 200,00 y el IVA es del 15%, entonces el precio final del producto (con IVA) 
@@ -510,13 +510,45 @@ Si se proporciona un valor nulo, devuelve -1 */
 //     else{
 //         return valor - (valor*15/100)
 //     }
-
-    
-
 // }
  
 // let salida = sinIva(230)
 // console.log(salida.toFixed(2))
 
+///////////////////////////////////////////////////////////////////////////////////////////7
+
+/*// 8. El índice de masa corporal (IMC), o BMI por sus siglas en inglés, es un valor que 
+determina la cantidad de grasa de una persona.
+
+// El BMI se calcula con la siguiente formula:
+
+// peso / altura^2
+// Escribe un programa que le pida al usuario su peso y altura. El programa deberá calcular
+el BMI e imprimir:
+
+// "Bajo de peso" si el BMI < 18.5
+// "Normal" si está entre 18.5 y 24.9
+// "Sobrepeso" si está entre 25 y 29.9
+// "Obeso" si es igual o mayor a 30 */
+
+
+////////////////////////////////////////////////////////////////////////////////////////////7
+
+function imc (peso, altura){
+    let imc = peso/(altura*altura)
+
+    if (imc < 18){
+        return console.log("Bajo de peso")
+    }
+    else if ( imc >= 18.5 && imc <= 24.9){
+        return console.log("Normal")
+    }
+    else if (imc >= 25 && imc<= 29.9){
+        return console.log("Normal")
+    }
+    else if ( imc >= 30){
+        return console.log("Obseo")
+    }
+}
 
 
