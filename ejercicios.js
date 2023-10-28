@@ -534,21 +534,24 @@ el BMI e imprimir:
 
 ////////////////////////////////////////////////////////////////////////////////////////////7
 
-function imc (peso, altura){
-    let imc = peso/(altura*altura)
+// function imc (peso, altura){
+//     let imc = peso/(altura*altura)
+//     console.log(imc)
 
-    if (imc < 18){
-        return console.log("Bajo de peso")
-    }
-    else if ( imc >= 18.5 && imc <= 24.9){
-        return console.log("Normal")
-    }
-    else if (imc >= 25 && imc<= 29.9){
-        return console.log("Normal")
-    }
-    else if ( imc >= 30){
-        return console.log("Obseo")
-    }
-}
+//     if (imc < 18){
+//         return console.log("Bajo de peso")
+//     }
+//     else if ( imc >= 18.5 && imc <= 24.9){
+//         return console.log("Normal")
+//     }
+//     else if (imc >= 25 && imc<= 29.9){
+//         return console.log("Normal")
+//     }
+//     else if ( imc >= 30){
+//         return console.log("Obseo")
+//     }
+// }
 
+// a = imc(200, 1.85)
 
+// console.log(a)
